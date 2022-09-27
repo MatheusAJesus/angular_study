@@ -1,5 +1,7 @@
 # AngularStudy
 
+This's an Angular Study app project  at Embraer, of the training Angular on Udemy platform
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
