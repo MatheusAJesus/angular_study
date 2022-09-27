@@ -1,0 +1,16 @@
+<main>
+  <h4>39 - Enhancing ngIf with an Else Condition</h4>
+  <p>lecture39 works!</p>
+
+  <p *ngIf="serverCreated; else noServer" style="color: green;">Server was created, server name is {{ serverName }}<br>
+    (This TAG appear because serverCreated now is ables by button and with else conditional)</p>
+
+    <button class="btn btn-success" [disabled]="!allowNewServer" (click)="onCreateServer()">Add
+      Server</button>
+
+  <ng-template #noServer>
+    <p style="color: red;">No server was created <br>
+      (this TAG appears by the ng-template that appears because of "else" on
+      TAG p with *ngIf="serverCreated", it's a conditional, after Click on the button above it fades away.)</p>
+  </ng-template>
+</main>

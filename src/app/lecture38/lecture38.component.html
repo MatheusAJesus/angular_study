@@ -1,0 +1,23 @@
+<main>
+  <h4>38 - Using ngIf to Output Data Conditionally</h4>
+  <p>lecture38 works!</p>
+
+  <p>This button starts disable by allowNewServer e after 2 seconds it is able, but after click and the server was
+    cretead and true, it will be disable.</p>
+  <button class="btn btn-success" [disabled]="!allowNewServer" (click)="onCreateServer()">Add
+    Server</button>
+
+  <p *ngIf="serverCreated" style="color: green;">Server was created, server name is {{ serverName }} </p>
+
+  <p *ngIf="serverCreated" >But the important thing is it's really added or removed to or from the DOM,
+
+    it's not there all the time, it's not hidden, it's just not there
+
+    which is super important to understand.
+
+    So that's ngIf, the star at the beginning indicates that this is a structural directive, really
+
+    changing the DOM as you just saw. <br>
+    (This TAGs appear
+    because serverCreated now is ables by button)</p>
+</main>

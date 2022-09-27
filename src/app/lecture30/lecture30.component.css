@@ -1,0 +1,14 @@
+main{
+  border: solid 1px;
+  padding: 10px;
+}
+
+.btn{
+  margin: 0 5px 5px;
+}
+
+.server{
+  border: thin solid;
+  width: max-content;
+  padding: 5px;;
+}

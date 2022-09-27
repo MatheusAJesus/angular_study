@@ -1,0 +1,43 @@
+main{
+  border: solid 1px;
+  padding: 10px;
+}
+
+.online{
+  width: max-content;
+  padding: 3px;
+  border: solid thin green;
+  background-color: lightgreen;
+  color: green;
+}
+
+
+.offline{
+  width: max-content;
+  padding: 3px;
+  border: solid thin crimson;
+  background-color: darksalmon;
+  color: crimson;
+}
+
+.teste{
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.btn{
+  width: 150px;
+  margin: 5px;
+
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+
+}
+
+

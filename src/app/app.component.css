@@ -1,0 +1,29 @@
+header{
+  width: 100%;
+  background-color: rgb(61, 112, 253);
+  padding: 15px 15px 0px;
+  margin-bottom: 2rem;
+}
+
+h2{
+  margin: 0px;
+  color: white;
+}
+h3{
+  text-align: center;
+}
+
+button{
+  width: 99%;
+  text-align: left;
+  margin:2px;
+}
+
+.btn:hover{
+  background-color: rgba(195, 211, 255, 0.568);
+}
+
+.lecture{
+  width:400px;
+  margin:1px
+}

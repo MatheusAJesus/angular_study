@@ -1,0 +1,13 @@
+<main>
+  <h4>41 - Applying CSS Classes Dynamically with ngClass</h4>
+  <p>lecture41 works!</p>
+
+  <p>This Server Starts randomly by the function in the constructor</p>
+
+  <p [ngClass]="getClass()" id="server">The Class Server with ID 41 is {{ getServerStatus() }}</p>
+
+  <p>The Class change randomly by the [ngClass] that receive a server status by the function getClass(), see the code file lecture41.component.ts</p>
+
+  <div class="{{ getServerStatus() }} teste" ></div>
+  <p>This ball received a string by String Interpolation to call a class with the same name of the server status. The method getServerStatus() is returning the server status how string</p>
+</main>

@@ -1,0 +1,39 @@
+<header>
+  <h2>Angular Study App - Section 2 - The Basics</h2>
+  <nav class="navbar navbar-expand-sm " aria-label="Third navbar example">
+    <div class="container-fluid">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: 1.2rem;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Select a Lecture</a>
+      <ul class="dropdown-menu" >
+        <li *ngFor="let lecture of lectures" class="lecture"><button type="button "class="btn" (click)="selectLecture($event)">{{ lecture }}</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div [ngSwitch]="lectureSelected">
+        <app-task1 *ngSwitchCase="'Task 1'"></app-task1>
+        <app-lecture27 *ngSwitchCase="'27.String Interpolation'"></app-lecture27>
+        <app-lecture28 *ngSwitchCase="'28.Property Binding'"></app-lecture28>
+        <app-lecture29 *ngSwitchCase="'29.Property Binding or String Interpolation'"></app-lecture29>
+        <app-lecture30 *ngSwitchCase="'30.Event Binding'"></app-lecture30>
+        <app-lecture32 *ngSwitchCase="'32.Passing and Using Data with Event Binding'"></app-lecture32>
+        <app-lecture34 *ngSwitchCase="'34.Two-Way-Databinding'"></app-lecture34>
+        <app-lecture35 *ngSwitchCase="'35.Combining all Forms of Databinding'"></app-lecture35>
+        <app-task2 *ngSwitchCase="'Task 2'"></app-task2>
+        <app-lecture38 *ngSwitchCase="'38.Using ngIf to Output Data Conditionally'"></app-lecture38>
+        <app-lecture39 *ngSwitchCase="'39.Enhancing ngIf with an Else Condition'"></app-lecture39>
+        <app-lecture40 *ngSwitchCase="'40.Styling Elements Dynamically with ngStyle'"></app-lecture40>
+        <app-lecture41 *ngSwitchCase="'41.Applying CSS Classes Dynamically with ngClass'"></app-lecture41>
+        <app-lecture42 *ngSwitchCase="'42.Outputting Lists with ngFor'"></app-lecture42>
+        <app-task3 *ngSwitchCase="'Task 3'"></app-task3>
+        <h3 *ngSwitchDefault>See the lecture or task  here!</h3>
+      </div>
+
+
+    </div>
+  </div>
+</div>

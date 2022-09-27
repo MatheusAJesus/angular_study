@@ -1,0 +1,16 @@
+main{
+  border: solid thin;
+  padding: 10px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+}
+
+h3{
+  border: solid 1px crimson;
+  background-color: darksalmon;
+  color: crimson;
+  padding:3px;
+  width:fit-content;
+  margin: auto;
+}

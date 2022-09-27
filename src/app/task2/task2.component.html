@@ -1,0 +1,17 @@
+<main>
+  <h4>Task 2 - Praticing Databinding</h4>
+  <p>task2 works!</p>
+  <ol>
+    <li>Add a input field wich update a property ('username') via Two-Way-Binding</li>
+    <li>Outuput the username property via String Interpolation (in a paragraph below the input)</li>
+    <li>Add a button wich may only be clicked if the username is NOT an empty string</li>
+    <li>Upon clicking the button, the username should be reset to an empty string</li>
+  </ol>
+
+  <h4>Answer</h4>
+  <label>Type an username</label>
+    <input type="text" class="form-control" [(ngModel)]="userName" placeholder="Task 2">
+  <p>{{ userName }}</p>
+  <button class="btn btn-danger" (click)="eraseName()"
+  [disabled]="userName === '' ">Erase</button>
+</main>

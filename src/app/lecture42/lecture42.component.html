@@ -1,0 +1,10 @@
+<main>
+  <h4>42 - Outputting Lists with ngFor</h4>
+  <p>lecture42 works!</p>
+  <p>Now we can show a TAG component  with ngFor. The code file lecture42.component.ts have an atributte named "servers" containing an empty array,so when a server is add by button "Add Server", in the DOM is showed a name. See below the result and the code file to understand this.</p>
+  <button class="btn btn-success" (click)="addServer()">Add Server</button>
+  <button class="btn btn-danger" (click)="removeServer()">Remove Server</button>
+  <div *ngFor="let server of servers">{{ server }}<app-server ></app-server></div>
+
+</main>
+

@@ -1,0 +1,32 @@
+main{
+  border: solid 1px;
+  padding: 10px;
+}
+
+.btn{
+  margin: 0 5px 5px;
+}
+
+.online{
+  width: max-content;
+  padding: 3px;
+  border: solid thin green;
+  background-color: lightgreen;
+  color: green;
+}
+
+
+.offline{
+  width: max-content;
+  padding: 3px;
+  border: solid thin crimson;
+  background-color: darksalmon;
+  color: crimson;
+}
+
+.teste{
+  width:30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}

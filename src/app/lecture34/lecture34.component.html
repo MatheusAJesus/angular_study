@@ -1,0 +1,21 @@
+<main>
+  <h4>Lecture 34 - Two-Way-Databinding</h4>
+  <p>lecture34 works!</p>
+  <p>Important: For Two-Way-Binding to work, you need to enable the ngModel  directive. This is done by adding the FormsModule  to the imports[ ]  array in the AppModule:</p>
+    <pre><code>
+    imports: [
+      BrowserModule,
+      FormsModule
+    ],
+    </code></pre>
+
+    You then also need to add the import from @angular/forms  in the app.module.ts file:
+    <pre><code>import &#123; FormsModule &#125; from '@angular/forms';</code></pre>
+
+    <hr>
+
+  <label>Server Name</label>
+  <input type="text" class="form-control" [(ngModel)]="serverName" placeholder="Lecture 34">
+  <p>Server name: {{ serverName }}</p>
+</main>
+

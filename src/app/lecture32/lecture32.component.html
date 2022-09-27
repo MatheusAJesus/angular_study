@@ -1,0 +1,9 @@
+<main>
+  <h4>Lecture 32 - Passing and Using Data with Event Binding</h4>
+  <p>lecture31 works!</p>
+  <label>Server Name</label>
+  <input type="text" class="form-control" (input)="onUpdateServerName($event)" placeholder="Lecture 32">
+  <p>Server name: {{ serverName }}</p>
+  <p>Here was used the text typed in the input form to show it with string interpolation below form.</p>
+  <p>The method "onUpdateServerName" on input property, was passed with an argument, $event, a super important event, is kind of a reserved variable name that you can use in the template when using event binding.</p>
+</main>

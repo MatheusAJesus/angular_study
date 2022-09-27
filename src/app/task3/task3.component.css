@@ -1,0 +1,9 @@
+.do-white{
+  color: white;
+  width: fit-content;
+  padding: 0 5px;
+}
+main{
+  border: solid 1px;
+  padding: 10px;
+}
