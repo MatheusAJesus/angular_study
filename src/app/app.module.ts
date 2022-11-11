@@ -24,6 +24,11 @@ import { Lecture41Component } from './lecture41/lecture41.component';
 import { Lecture42Component } from './lecture42/lecture42.component';
 import { Task3Component } from './task3/task3.component';
 import { Task4Component } from './task4/task4.component';
+import { Lecture62Component } from './lecture62/lecture62.component';
+import { Lecture63Component } from './lecture63/lecture63.component';
+import { Lecture64Component } from './lecture64/lecture64.component';
+import { CockpitComponent } from './lecture64/cockpit/cockpit.component';
+import { ServerElementComponent } from './lecture64/server-element/server-element.component'
 
 
 
@@ -51,8 +56,13 @@ import { Task4Component } from './task4/task4.component';
     Lecture42Component,
     Task3Component,
     Task4Component,
+    Lecture62Component,
+    Lecture63Component,
+    Lecture64Component,
+    CockpitComponent,
+    ServerElementComponent
   ],
-  
+
   imports: [
     BrowserModule,
     FormsModule,

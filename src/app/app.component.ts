@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  lectures = [
+  lectures2 = [
     'Task 1',
     '27.String Interpolation',
     '28.Property Binding',
@@ -22,6 +22,11 @@ export class AppComponent {
     '41.Applying CSS Classes Dynamically with ngClass',
     '42.Outputting Lists with ngFor',
     'Task 3'
+  ]
+
+  lectures4 = [
+    '62. Understanding Angular Error Messages',
+    '63. Debugging Code in the Browser Using Sourcemaps'
   ]
 
   lectureSelected: any

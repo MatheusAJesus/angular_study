@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>62. Understanding Angular Error Messages</h2>
+      <button class="btn btn-primary" (click)="onAddServer()">Add Server</button>
+      <br><br>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let server of servers; let i = index"
+          (click)="onRemoveServer(i)">{{ server }}</li>
+      </ul>
+      <p>
+        Click in Add Server, notice that it is added "Servers" below, so click in "Another Server" that shows and this "server"
+        disappear from the screen, but the last "server" doesn't, because there are a logic error in code. <br>
+        See the code file lecture62.component.ts and find the logic error.
+      </p>
+      <p>
+        After to find the ERROR, see the Lecture 63!
+      </p>
+    </div>
+  </div>
+</div>
+
+See the Console tab at DevTools window with inspect and click on the button "Add Server".
+        Will not be shown an ERROR

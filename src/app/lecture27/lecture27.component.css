@@ -2,3 +2,7 @@ main{
   border: solid thin;
   padding: 10px;
 }
+
+span{
+  color: rgb(0, 161, 0);
+}

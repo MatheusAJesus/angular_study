@@ -1,16 +1,24 @@
 <header>
-  <h2>Angular Study App - Section 2 - The Basics</h2>
-  <nav class="navbar navbar-expand-sm " aria-label="Third navbar example">
-    <div class="container-fluid">
-      <a class="nav-link dropdown-toggle" style="color: white;font-size: 1.2rem;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Select a Lecture</a>
-      <ul class="dropdown-menu" >
-        <li *ngFor="let lecture of lectures" class="lecture"><button type="button "class="btn" (click)="selectLecture($event)">{{ lecture }}</button>
-        </li>
+  <h2>Angular Study App - Features</h2>
+  <div class="navs">
+    <div class="menu">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: 1.2rem;" href="#" data-bs-toggle="dropdown"
+        aria-expanded="false">Section 2 - The basics</a>
+      <ul class="dropdown-menu">
+        <li *ngFor="let lecture of lectures2" class="lecture"><button type="button " class="btn"
+            (click)="selectLecture($event)">{{ lecture }}</button>
       </ul>
     </div>
-  </nav>
+    <div class="menu">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: 1.2rem;" href="#" data-bs-toggle="dropdown"
+        aria-expanded="false">Section 4 - Debugging</a>
+      <ul class="dropdown-menu center">
+        <li *ngFor="let lecture of lectures4" class="lecture"><button type="button " class="btn"
+            (click)="selectLecture($event)">{{ lecture }}</button>
+      </ul>
+    </div>
+  </div>
 </header>
-
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -30,10 +38,12 @@
         <app-lecture41 *ngSwitchCase="'41.Applying CSS Classes Dynamically with ngClass'"></app-lecture41>
         <app-lecture42 *ngSwitchCase="'42.Outputting Lists with ngFor'"></app-lecture42>
         <app-task3 *ngSwitchCase="'Task 3'"></app-task3>
+        <app-lecture62 *ngSwitchCase="'62. Understanding Angular Error Messages'"></app-lecture62>
+        <app-lecture63 *ngSwitchCase="'63. Debugging Code in the Browser Using Sourcemaps'"></app-lecture63>
         <h3 *ngSwitchDefault>See the lecture or task  here!</h3>
       </div>
-
-
+      <app-lecture64></app-lecture64>
     </div>
   </div>
 </div>
+
