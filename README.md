@@ -1,4 +1,4 @@
-# AngularStudy
+
 
 This's an Angular Study app project  at Embraer, of the training Angular on Udemy platform
 
