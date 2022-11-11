@@ -37,4 +37,4 @@ testem.log
 Thumbs.db
 
 # Others
-README.md
+*.md
