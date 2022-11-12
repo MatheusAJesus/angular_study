@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  lectures2 = [
+  lectures2: Array<string> = [
     'Task 1',
     '27.String Interpolation',
     '28.Property Binding',
@@ -24,13 +24,17 @@ export class AppComponent {
     'Task 3'
   ]
 
-  lectures4 = [
+  lectures4: Array<string> = [
     '62. Understanding Angular Error Messages',
     '63. Debugging Code in the Browser Using Sourcemaps'
   ]
 
-  lectureSelected: any
-  firstP = true;
+  lectures5: Array<string> = [
+    '64. Introduction of the Module up to 69. Binding to Custom Events'
+  ]
+
+  lectureSelected: string
+  firstP: boolean = true;
 
   constructor() {
   }

@@ -17,6 +17,14 @@
             (click)="selectLecture($event)">{{ lecture }}</button>
       </ul>
     </div>
+    <div class="menu">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: 1.2rem;" href="#" data-bs-toggle="dropdown"
+        aria-expanded="false">Seção 5: Components & Databinding Deep Dive</a>
+      <ul class="dropdown-menu center">
+        <li *ngFor="let lecture of lectures5" class="lecture"><button type="button " class="btn"
+            (click)="selectLecture($event)">{{ lecture }}</button>
+      </ul>
+    </div>
   </div>
 </header>
 <div class="container">
@@ -40,9 +48,9 @@
         <app-task3 *ngSwitchCase="'Task 3'"></app-task3>
         <app-lecture62 *ngSwitchCase="'62. Understanding Angular Error Messages'"></app-lecture62>
         <app-lecture63 *ngSwitchCase="'63. Debugging Code in the Browser Using Sourcemaps'"></app-lecture63>
+        <app-lecture64 *ngSwitchCase="'64. Introduction of the Module up to 69. Binding to Custom Events'"></app-lecture64>
         <h3 *ngSwitchDefault>See the lecture or task  here!</h3>
       </div>
-      <app-lecture64></app-lecture64>
     </div>
   </div>
 </div>

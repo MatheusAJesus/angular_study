@@ -34,5 +34,4 @@ export class Lecture64Component implements OnInit {
       content: blueprintData.serverContent
     });
   }
-
 }
